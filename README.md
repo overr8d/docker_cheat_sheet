@@ -10,16 +10,21 @@ docker rm <name | id>
 ```
 
 ## Basic Docker Terminology
-### Docker Images:  
-Blueprints of our application.
-### Docker Container: 
-Real instances of our application. 
-### Docker Deamon: 
-Building, running and distributing Docker containers.
-### Docker Client: 
-Runs on the local machine and connects to the daemon. 
-### Docker Hub: 
-Registry of docker images. 
+
+## Container
+A runnable process and its resource dependencies grouped together into a single unit (see above)
+
+## Image
+A blueprint for creating containers. Much like class versus object, or VM image versus a VM. As an example, the Redis Docker Image allows you to create one or more actual Redis containers that can/will run the Redis process and whatever dependencies it has.
+
+## Dockerfile
+A text file containing instructions for building a docker image. All images have an associated Dockerfile.
+
+## Registry
+An external service for storing/referencing images that you can name and version. Dockerhub is a registry provided to you by Docker, but you can set up a private one if need be.
+
+## Volume
+Like a traditional Linux mount, a volume is a folder on the docker host system that is mapped into a running container 
   
 ## Working with Docker& Ubuntu and Node.js
 ```
